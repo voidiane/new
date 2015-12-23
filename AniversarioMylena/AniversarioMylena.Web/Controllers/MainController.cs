@@ -15,6 +15,7 @@ namespace AniversarioMylena.Web.Controllers
         }
 
         [HttpPost]
+        [ValidateAntiForgeryToken]
         public ActionResult Aniversario()
         {
             return View();

@@ -12,6 +12,7 @@
 
 @using (@Html.BeginForm("Aniversario", "Main", FormMethod.Post, new {id = "formPost"}))
 {
+    @Html.AntiForgeryToken()
 }
 <script src="~/Scripts/jquery-1.10.2.min.js"></script>
 <script src="~/Scripts/bootstrap.min.js"></script>
