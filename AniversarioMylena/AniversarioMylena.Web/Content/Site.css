@@ -27,11 +27,11 @@ textarea {
 
 @media (max-width: 480px) {
     h2 {
-        font-size: 30px;
+        font-size: 25px;
     }
 
     #timer {
-        font-size: 30px;
+        font-size: 25px;
     }
 }
 
