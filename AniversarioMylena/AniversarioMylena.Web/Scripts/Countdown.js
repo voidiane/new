@@ -3,7 +3,7 @@
 $(function () {
     var now = new Date();
 
-    if (now.getMonth() > 0) {
+    if (now.getMonth() > 0 && now.getDate() > 8) {
         birthday = new Date("February 08, " + (now.getFullYear() + 1) + " 00:01:00");
     } else {
         birthday = new Date("February 08, " + now.getFullYear() + " 00:01:00");
@@ -13,7 +13,6 @@ $(function () {
 
 function count() {
     var now = new Date();
-    birthday = new Date();
     var timeDiff = birthday.getTime() - now.getTime();
     if (timeDiff <= 0) {
         clearTimeout(timeOut);
