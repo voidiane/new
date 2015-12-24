@@ -14,6 +14,7 @@ $(function () {
 function count() {
     var now = new Date();
     var timeDiff = birthday.getTime() - now.getTime();
+    now = null;
     if (timeDiff <= 0) {
         clearTimeout(timeOut);
         $("form#formPost").submit();
