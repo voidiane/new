@@ -3,11 +3,12 @@
 $(function () {
     var now = new Date();
 
-    if (now.getMonth() > 0 && now.getDate() > 8) {
+    if ((now.getMonth() >= 0 && now.getDate() > 8) || now.getMonth() > 0) {
         birthday = new Date("February 08, " + (now.getFullYear() + 1) + " 00:01:00");
     } else {
         birthday = new Date("February 08, " + now.getFullYear() + " 00:01:00");
     }
+
     count();
 });
 
